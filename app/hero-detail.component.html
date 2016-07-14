@@ -1,0 +1,118 @@
+<div *ngIf="hero">
+
+    <div class ="container">
+        <div class="col-sm-6">
+            <div class="item-body">
+                    
+            
+
+    
+     <div class="container-fluid hero">
+         <img class="main-image" src="{{hero.mainpic}}"  >
+        
+<div class="row">
+    
+    <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail ">
+      <img src="https://store.arduino.cc/bmz_cache/2/29876275dc7dcdcfd01caa5dc48442d7.image.446x354.jpg" id="first-preview" class="image-preview">
+    </a>
+  </div>
+    
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="https://store.arduino.cc/bmz_cache/3/313cef0ec13f5914f8bc947fc196c3f3.image.538x354.jpg" id="second-preview"  class="image-preview">
+    </a>
+  </div>
+
+         
+  <div class="col-xs-6 col-md-3">
+    <a href="#" class="thumbnail">
+      <img src="https://store.arduino.cc/bmz_cache/4/4781bf9734157511eb40f2edcb3dc38a.image.538x354.jpg" id="third-preview"  class="image-preview">
+    </a>
+
+</div>
+    
+    </div>
+	<br />
+	<br />
+	<hr />
+	<br />
+
+    </div>
+            </div>
+        </div>
+        
+        <div class="col-sm-4">
+            <h2 class="item-title">{{hero.hame}}</h2>
+            
+            <div class="details">
+                            
+                <button id ="details-toggle">Details</button>
+                <p id="details-text">{{hero.details}}</p>
+            </div>
+            <br>
+            <!--
+            			<section>
+				<form class="ac-custom ac-radio ac-fill" autocomplete="off">
+					<ul>
+						<li><input id="r1" name="r1" type="radio"><label for="r1">Only Genuino</label></li>
+						<li><input id="r2" name="r1" type="radio"><label for="r2">With tutorial</label></li>
+					</ul>
+				</form>
+			</section>
+-->
+  <h2>{{hero.name}}</h2>
+  <h2>{{hero.price}}</h2>
+  <div>
+    <label>quantity: </label>
+      <span>
+    <input [(ngModel)]="hero.quantity" placeholder="quantity" /></span>
+   </div>
+    <div>
+            <label>promo: </label>
+        
+            <input id="forpromo" />
+        <button (click)="checkPromo()">Check</button>
+   </div>
+                
+  <button (click)="goBack()">Back</button>
+  <button (click)="save()" >Save</button>
+</div>
+
+
+		
+            
+            
+            
+        
+        
+        <div class="col-sm-2">
+        <div class="recomendations">
+        <h4>You may also like: </h4>
+            
+            <div class="rec-item">
+                
+                <img src="https://store.arduino.cc/bmz_cache/4/4d135c0b43db6eb3539816587f32b373.image.446x354.jpg" class="img-responsive" style="width:100%" alt="Image">
+                <h5>10 BC547 transistor</h5>
+            </div>
+            
+            <div class="rec-item">
+                
+                <img src="https://www.arduino.cc/en/uploads/Main/ABX0003_iso_both.jpg" class="img-responsive" style="width:100%" alt="Image">
+                <h5>Arduino Zero</h5>
+            </div>
+            </div>
+        </div>
+    </div>
+    <script src="details.js"></script>
+</div>
+
+    
+
+
+
+<!-- 
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

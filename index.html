@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>document.write('<base href="' + document.location + '" />');</script>
+    <title>Angular 2 Tour of Heroes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="sample.css">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <!-- Polyfill(s) for older browsers -->
+    <script src="https://npmcdn.com/core-js/client/shim.min.js"></script>
+
+    <script src="https://npmcdn.com/zone.js@0.6.12?main=browser"></script>
+    <script src="https://npmcdn.com/reflect-metadata@0.1.3"></script>
+    <script src="https://npmcdn.com/systemjs@0.19.27/dist/system.src.js"></script>
+
+    <script src="systemjs.config.js"></script>
+    <script src="app/details.js"></script>
+    <script>
+      System.import('app').catch(function(err){ console.error(err); });
+    </script>
+  </head>
+
+  <body>
+       
+<nav class="navbar navbar-custom">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">ArduinoStore</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="#"><span class="glyphicon glyphicon-user"></span></a></li>
+      <li><a href="#"><span class="glyphicon glyphicon-usd"></span></a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-star"></span></a></li>
+      <li><a href="cart.html"><span class="glyphicon glyphicon-shopping-cart"></span> <span class="badge" id="shopping-cart-badge">0</span></a></li>
+    </ul>
+  </div>
+</nav>
+    
+    
+    <nav>
+        <div class="container-fluid lower-menu">
+            <ul class="nav navbar-nav">
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Arduino
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Arduino Uno</a></li>
+                        <li><a href="#">Arduino Nano</a></li>
+                        <li><a href="#">Arduino Micro</a></li>
+                        <li><a href="#">Arduino Zero</a></li>
+                    </ul>
+                </li>
+                
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Genuino
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Genuino Uno</a></li>
+                        <li><a href="#">Genuino Mega</a></li>
+                        <li><a href="#">Genuino Zero</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Components
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Actuators</a></li>
+                        <li><a href="#">Connectors</a></li>
+                        <li><a href="#">LCD & Matrix</a></li>
+                        <li><a href="#">Passive & Active</a></li>
+                        <li><a href="#">Sensors</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+                        Books & Manuals
+                        <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Books</a></li>
+                        <li><a href="#">Web resources</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <my-app>Loading...</my-app>
+        
+        
+        
+        
+
+
+    <footer class="container-fluid footer-custom ">
+        <div class="footer-content ">
+            <div class="col-sm-2 sidenav footer-block">
+                <p><a class="link-footer" href="#">Sell with ArduinoStore</a></p>
+            
+            </div>
+            <div class="col-sm-2 sidenav footer-block">
+                <p><a class="link-footer" href="#">Buy with ArduinoStore</a></p>
+            </div>
+            <div class="col-sm-2 sidenav footer-block">
+                <p><a class="link-footer" href="#">About us</a></p>
+            </div>
+            <div class="col-sm-2 sidenav footer-block">
+                <p><a class="link-footer" href="#">Privacy Legacy</a></p>
+            
+            </div>
+            <div class="col-sm-2 sidenav footer-block">
+                <p><a class="link-footer" href="#">Terms&Conditions</a></p>
+            
+            </div>
+            <div class="col-sm-2 sidenav footer-block">
+                <p><a class="link-footer" href="#">Community</a></p>
+            </div>
+        </div>
+        </footer>
+      
+  </body>
+</html>
+
+
+<!-- 
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

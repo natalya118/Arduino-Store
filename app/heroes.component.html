@@ -1,0 +1,42 @@
+<h2>Shopping cart</h2>
+
+
+
+
+
+<div class="container">          
+  <table class="table table-condensed shopping-cart">
+    <thead>
+      <tr>
+        <th style="width: 50%">Name</th>
+        <th style="width: 15%">Price, $</th>
+        <th style="width: 25%">Quantity</th>
+        <th style="width: 20%">Total, $</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let hero of heroes" class=row-cart-hero>
+        <td class="vertical-align-center">
+          <img class="image-preview-card" src="{{hero.mainpic}}">
+            {{hero.name}} <button class="delete-button"><span class="glyphicon glyphicon-trash"></span></button>
+          </td>
+        <td class="vertical-align-center">{{hero.price}}</td>
+        <td class="vertical-align-center"><div class="cart-item-quantity">
+        <button (click)="decrement(hero, $event)" class="dec-btn" type="button">-</button>
+            <label>{{hero.quantity}}</label>
+           <button class="inc-btn" type="button">+</button>
+            
+            
+            </div></td>
+          
+        <td class="vertical-align-center"><label>{{ +(hero.quantity) * +(hero.price) }}</label></td>
+      </tr>
+
+    </tbody>
+  </table>
+</div>
+<!-- 
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+-->

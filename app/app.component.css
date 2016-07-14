@@ -1,0 +1,610 @@
+
+/*
+Copyright 2016 Google Inc. All Rights Reserved.
+Use of this source code is governed by an MIT-style license that
+can be found in the LICENSE file at http://angular.io/license
+*/
+
+
+
+
+
+body{
+	font-family: 'Lato', Arial, sans-serif;
+}
+
+.right-menu{
+    font-family: cursive;
+    margin-right: 0px;
+    margin-top: 0px;
+}
+
+.navbar-custom {
+    background-color: #00979c;
+    color:#ffffff;
+    border-radius:0;
+    position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+    width: 100%;
+    
+}
+
+.navbar-custom .navbar-nav > li > a {
+    color:#fff;
+}
+.navbar-custom .navbar-nav > .active > a, .navbar-nav > .active > a:hover, .navbar-nav > .active > a:focus {
+    color: #ffffff;
+    background-color:transparent;
+}
+.navbar-custom .navbar-brand {
+    color:#eeeeee;
+}
+
+.navbar-brand{
+    font-family: cursive;
+}
+
+
+.price{
+    font-family:monospace;
+    color: #00979c;
+}
+
+
+.item-card{
+    font-family: cursive;
+}
+
+
+
+
+
+
+.footer-custom{
+    background-color: #00979c;
+     position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+    width: 100%;
+    margin-top: 10px;
+    
+}
+.footer-block{
+    color: white;
+    text-decoration-color: aliceblue;
+}
+
+.link-footer{
+    color: aliceblue;
+}
+
+.btn-loc{
+    background-color: #00979c;
+    color: white;
+}
+
+
+//styles for carousel
+
+.hero.container-fluid {
+    padding: 0;
+}
+.hero .message-1 {
+    background-color: yellowgreen;
+    color: #333;
+}
+.hero .message-2 {
+    background-color: cadetblue;
+    color: #333;
+}
+.hero .message-3 {
+    background: #BF4042;
+    color: #333;
+}
+    .hero .message-1:hover,
+    .hero .message-2:hover,
+    .hero .message-3:hover {
+        color: #fff;
+    }
+    .hero .message-1:active,
+    .hero .message-2:active,
+    .hero .message-3:active {
+        color: #fff;
+        opacity: 1;
+    }
+
+   
+
+.hero .carousel-indicators {
+    bottom: -10px;
+	left: 0;
+    margin-left: 0;
+    width: 100%;
+}
+    .hero .carousel-indicators li {
+		border: none;
+        border-radius: inherit;
+		cursor: pointer;
+        display: inline-block;
+        height: 70px;
+        margin: 0px;
+		padding: 25px 0;
+		opacity: .9;
+        text-indent: 0;
+    }
+    .hero .carousel-indicators .col-sm-4 {
+        width: 33.33333333333333%;
+    }
+    .hero .carousel-indicators .col-sm-3 {
+        width: 25%;
+    }
+    .hero .carousel-indicators .active {
+        height: 80px;
+        opacity: 1;
+    }
+    .hero .carousel-indicators li .caption {
+        font-size: 20px;
+        font-family: cursive;
+		height: 100%;
+        text-transform: uppercase;
+		width: 100%;
+    }
+    .hero .carousel-indicators li.active .caption {
+        background: inherit;
+		box-shadow: 0.157px 2.996px 4px 0px #5a5a5a;
+		color: #fff;
+        font-family: cursive;
+		height: 110px;
+		padding: 40px 20px;
+        position: absolute;
+        opacity: 1;
+        top: -15px;
+        z-index: 100;
+    }
+.hero .carousel-inner .item {
+    height: 500px;
+}
+    .hero .carousel-inner .item .carousel-card {
+        height: 420px;
+        width: 100%;
+    }
+.hero .carousel-caption {
+    bottom: 70px;
+}
+    .hero .carousel-caption h1 {
+        font-size: 45px;
+        margin-bottom: 20px;
+    }
+@media (max-width: 900px) {
+    .hero .carousel-indicators li .caption {
+        font-size: 17px;
+    }
+}
+@media (max-width: 767px) {
+    .hero .carousel-indicators .col-sm-4 {
+        width: 10px;
+    }
+    .hero .carousel-indicators .col-sm-3 {
+        width: 10px;
+    }
+    .hero .carousel-indicators {
+        bottom: 100px;
+    }
+		/* no change from bootstrap code */
+        .hero .carousel-indicators li {
+			background-color: #000 \9;
+            background-color: rgba(0, 0, 0, 0);
+            border: 1px solid #fff;
+            border-radius: 10px;
+			cursor: pointer;
+            display: inline-block;
+            height: 10px;
+            margin: 1px;
+			padding: 0;
+            text-indent: -999px;
+			width: 10px;
+        }
+        .hero .carousel-indicators .active {
+            background-color: #fff;
+			height: 12px;
+            margin: 0;
+			width: 12px;
+        }
+        .hero .carousel-indicators li .caption {
+            display: none;
+        }
+    .hero .carousel-inner .item {
+        height: 500px;
+    }
+        .hero .carousel-inner .item .carousel-card {
+            background-position: 50% 0;
+			height: 300px;
+            width: 100%;
+        }
+    .hero .carousel-caption {
+        bottom: 0px;
+    }
+}
+
+.item-title{
+    
+    font-family: cursive;
+    color: #00979c;
+}
+
+
+#add-to-cart{
+    margin-top: 50px;
+    background-color: yellowgreen;
+    color: white;
+}
+
+.recomendations {
+    text-align: center;
+    font-family: cursive;
+}
+
+.main-image{
+    margin-bottom: 20px;
+}
+
+#add-to-cart-button{
+    margin: 20px;
+}
+
+#shopping-cart-badge{
+    visibility: hidden;
+}
+
+.short-name{
+    z-index: 10;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    background-color: limegreen;
+    color: white;
+    border-radius: 4px;
+}
+
+
+.link-cat{
+    color: #00979c;
+    font-size: 18px;
+}
+
+
+
+
+
+/*for slider */
+#connect .noUi-origin {
+	right: auto;
+	width: 0;
+}
+
+/* Position the bar and color it. */
+#connect .connect {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	background: #00979c;
+	box-shadow: inset 0 0 3px rgba(51,51,51,0.45);
+}
+
+/* When the slider is moved by tap,
+   transition the connect bar like the handle. */
+#connect.noUi-state-tap .connect {
+-webkit-transition: left 300ms, right 300ms;
+	transition: left 300ms, right 300ms;
+}
+
+
+
+#details-toggle{
+    width: 70%;
+    height: 4%;
+    border-radius: 2px;
+    margin: 5%;
+    border-color: cornflowerblue;
+    color: darkblue;
+    font-family: cursive;
+    
+}
+
+
+
+
+
+
+
+*,
+*:after,
+*::before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.ac-custom {
+	padding: 0 3em;
+	max-width: 900px;
+	margin: 0 auto;
+}
+
+.ac-custom h2 {
+	font-size: 3em;
+	font-weight: 300;
+	padding: 0 0 0.5em;
+	margin: 0 0 10px;
+}
+
+.ac-custom ul,
+.ac-custom ol {
+	list-style: none;
+	padding: 0;
+	margin: 0 auto;
+	max-width: 800px;
+}
+
+.ac-custom li {
+	margin: 0 auto;
+	padding: 2em 0;
+	position: relative;
+}
+
+.ac-custom label {
+	display: inline-block;
+	position: relative;
+	font-size: 1em;
+	padding: 0 0 0 80px;
+	vertical-align: top;
+	color: darkblue;
+	cursor: pointer;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.ac-custom input[type="checkbox"],
+.ac-custom input[type="radio"],
+.ac-custom label::before {
+	width: 50px;
+	height: 50px;
+	top: 50%;
+	left: 0;
+	margin-top: -25px;
+	position: absolute;
+	cursor: pointer;
+}
+
+.ac-custom input[type="checkbox"],
+.ac-custom input[type="radio"] {
+	opacity: 0;
+	-webkit-appearance: none;
+	display: inline-block;
+	vertical-align: middle;
+	z-index: 100;
+}
+
+.ac-custom label::before {
+	content: '';
+	border: 4px solid #00979c;
+	-webkit-transition: opacity 0.3s;
+	transition: opacity 0.3s;
+}
+
+.ac-radio label::before {
+	border-radius: 50%;
+}
+
+.ac-custom input[type="checkbox"]:checked + label,
+.ac-custom input[type="radio"]:checked + label {
+	color: darkcyan;
+} 
+
+.ac-custom input[type="checkbox"]:checked + label::before,
+.ac-custom input[type="radio"]:checked + label::before {
+	opacity: 0.9;
+}
+
+/* General SVG and path styles */
+
+.ac-custom svg {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 50%;
+	margin-top: -20px;
+	left: 5px;
+	pointer-events: none;
+}
+
+.ac-custom svg path {
+	stroke: darkcyan;
+	stroke-width: 13px;
+	stroke-linecap: round;
+	stroke-linejoin: round;
+	fill: none;
+}
+
+/* Specific input, SVG and path styles */
+
+/* Circle */
+.ac-circle input[type="checkbox"],
+.ac-circle input[type="radio"],
+.ac-circle label::before {
+	width: 30px;
+	height: 30px;
+	margin-top: -15px;
+	left: 10px;
+	position: absolute;
+}
+
+.ac-circle label::before {
+	background-color: darkgreen;
+	border: none;
+}
+
+.ac-circle svg {
+	width: 70px;
+	height: 70px;
+	margin-top: -35px;
+	left: -10px;
+}
+
+.ac-circle svg path {
+	stroke-width: 5px;
+} 
+
+/* Box Fill */
+.ac-boxfill svg path {
+	stroke-width: 8px;
+} 
+
+/* Swirl */
+.ac-swirl svg path {
+	stroke-width: 8px;
+}
+
+/* List */
+.ac-list ol {
+	list-style: decimal;
+	list-style-position: inside;
+}
+
+.ac-list ol li {
+	font-size: 2em;
+	padding: 1em 1em 0 2em;
+	text-indent: -40px;
+}
+
+.ac-list ol li label {
+	font-size: 1em;
+	text-indent: 0;
+	padding-left: 30px;
+}
+
+.ac-list label::before {
+	display: none;
+}
+
+.ac-list svg {
+	width: 100%;
+	height: 50px;
+	left: 0;
+	top: 1.2em;
+	margin-top: 0px;
+}
+
+.ac-list svg path {
+	stroke-width: 4px;
+}
+
+/* Media Queries */
+@media screen and (max-width: 50em) {
+	section {
+		font-size: 80%;
+	}
+}
+
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
+
+
+
+section {
+	padding: 7em 0;
+}
+
+section:nth-child(even) {
+	background: rgba(0,0,0,.05);
+}
+
+section.related {
+	text-align: center;
+	font-size: 1.6em;
+}
+
+.related p {
+	margin: 0;
+	padding: 1.1em;
+}
+
+/* To Navigation Style */
+.codrops-top {
+	text-transform: uppercase;
+	width: 100%;
+	font-size: 0.69em;
+	line-height: 1.2;
+	font-weight: 700;
+}
+
+.codrops-top a {
+	text-decoration: none;
+	padding: 0 1em;
+	letter-spacing: 0.1em;
+	display: inline-block;
+}
+
+.codrops-top span.right {
+	float: right;
+}
+
+.codrops-top span.right a {
+	float: left;
+	display: block;
+}
+
+.codrops-icon:before {
+	font-family: 'codropsicons';
+	margin: 0 4px;
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+.codrops-icon-drop:before {
+	content: "\e001";
+}
+
+.codrops-icon-prev:before {
+	content: "\e004";
+}
+
+@media screen and (max-width: 25em) {
+
+	.codrops-icon span {
+		display: none;
+	}
+
+}
+
+
+
+
+.form-description{
+    font-size: 30px;
+    text-align: center;
+    font-family: cursive;
+    color: cadetblue;
+    margin-bottom: 10px;
+}
+
+
+.btn-order{
+    text-align: center;
+    position: relative;
+    margin-left:33%;
+    width: 35%;
+    height: 40px;
+    font-family: cursive;
+    background-color: darkcyan;
+    color: aliceblue;
+    border-radius: 3px;
+}
