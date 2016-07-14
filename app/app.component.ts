@@ -7,18 +7,17 @@ import { HeroService }        from './hero.service';
   selector: 'my-app',
 
   template: `
+  
   <div class ="container">
         <div class="col-sm-9">
 
     <nav>
-      <a [routerLink]="['/dashboard']" routerLinkActive="active">Dashboard</a>
-      <a [routerLink]="['/heroes']" routerLinkActive="active">Heroes</a>
+      <a [routerLink]="['/dashboard']" routerLinkActive="active">Go back to the Store</a>
+      <a [routerLink]="['/heroes']" routerLinkActive="active" class="cart-link">Go to cart</a>
     </nav>
     <router-outlet></router-outlet>
     </div>
         
-        
-            
         </div>
   `,
   styleUrls: ['app/app.component.css'],

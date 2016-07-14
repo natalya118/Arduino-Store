@@ -60,7 +60,11 @@ body{
 
 
 
-
+.cart-link{
+    margin-left: 90%;
+    padding-right: 0px;
+    color: aqua;
+}
 
 .footer-custom{
     background-color: #00979c;

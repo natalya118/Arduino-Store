@@ -78,17 +78,7 @@ export class HeroService {
     return Promise.reject(error.message || error);
   }
   
-  
-decrement(hero: Hero){
-    console.log("in service");
-    if(hero.quantity>0){
-        hero.quantity--;
-        var el = document.getElementById('shopping-cart-badge');
-    var presQuant = +(document.getElementById('shopping-cart-badge').innerText);
-    presQuant--;
-    el.innerHTML = presQuant;
-    }
-  }
+
 }
 
 

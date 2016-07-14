@@ -16,7 +16,7 @@ export class HeroesComponent implements OnInit {
   selectedHero: Hero;
   addingHero = false;
   error: any;
-
+  totalPrice = 0;
   constructor(
     private router: Router,
     private heroService: HeroService) { }
@@ -63,13 +63,47 @@ export class HeroesComponent implements OnInit {
     this.router.navigate(['/detail', this.selectedHero.id]);
   }
   
-  decrement(hero: Hero, event: any){
-      
-    this.heroService
-        .decrement(this.hero)
-        .catch(error => this.error = error); // TODO: Display error message
   
+decrement(hero: Hero){
+    if(hero.quantity>0){
+        hero.quantity--;
+        var el = document.getElementById('shopping-cart-badge');
+    var presQuant = +(document.getElementById('shopping-cart-badge').innerText);
+    presQuant--;
+    totalPrice -= hero.price;
+    el.innerHTML = presQuant;
+    
+    totalPrice -= hero.price;
+    var tpel =document.getElementById('total-price-holder');
+    tpel.innerHTML = totalPrice;
+    
+    }
+    console.log("tp");
+    console.log(totalPrice);
   }
+  
+  
+  increment(hero: Hero){
+    hero.quantity++;
+    var el = document.getElementById('shopping-cart-badge');
+    
+    var presQuant = +(document.getElementById('shopping-cart-badge').innerText);
+    presQuant++;
+    el.innerHTML = presQuant;
+    totalPrice += hero.price;
+    var tpel =document.getElementById('total-price-holder');
+    
+    tpel.innerHTML = totalPrice;
+    
+    
+    
+    console.log("tp");
+    console.log(totalPrice);
+    
+  }
+  
+  
+  
 }
 
 

@@ -17,6 +17,7 @@ var HeroesComponent = (function () {
         this.router = router;
         this.heroService = heroService;
         this.addingHero = false;
+        this.totalPrice = 0;
     }
     HeroesComponent.prototype.getHeroes = function () {
         var _this = this;
@@ -58,11 +59,32 @@ var HeroesComponent = (function () {
     HeroesComponent.prototype.gotoDetail = function () {
         this.router.navigate(['/detail', this.selectedHero.id]);
     };
-    HeroesComponent.prototype.decrement = function (hero, event) {
-        var _this = this;
-        this.heroService
-            .decrement(this.hero)
-            .catch(function (error) { return _this.error = error; }); // TODO: Display error message
+    HeroesComponent.prototype.decrement = function (hero) {
+        if (hero.quantity > 0) {
+            hero.quantity--;
+            var el = document.getElementById('shopping-cart-badge');
+            var presQuant = +(document.getElementById('shopping-cart-badge').innerText);
+            presQuant--;
+            totalPrice -= hero.price;
+            el.innerHTML = presQuant;
+            totalPrice -= hero.price;
+            var tpel = document.getElementById('total-price-holder');
+            tpel.innerHTML = totalPrice;
+        }
+        console.log("tp");
+        console.log(totalPrice);
+    };
+    HeroesComponent.prototype.increment = function (hero) {
+        hero.quantity++;
+        var el = document.getElementById('shopping-cart-badge');
+        var presQuant = +(document.getElementById('shopping-cart-badge').innerText);
+        presQuant++;
+        el.innerHTML = presQuant;
+        totalPrice += hero.price;
+        var tpel = document.getElementById('total-price-holder');
+        tpel.innerHTML = totalPrice;
+        console.log("tp");
+        console.log(totalPrice);
     };
     HeroesComponent = __decorate([
         core_1.Component({

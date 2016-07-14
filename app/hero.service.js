@@ -70,16 +70,6 @@ var HeroService = (function () {
         console.error('An error occurred', error);
         return Promise.reject(error.message || error);
     };
-    HeroService.prototype.decrement = function (hero) {
-        console.log("in service");
-        if (hero.quantity > 0) {
-            hero.quantity--;
-            var el = document.getElementById('shopping-cart-badge');
-            var presQuant = +(document.getElementById('shopping-cart-badge').innerText);
-            presQuant--;
-            el.innerHTML = presQuant;
-        }
-    };
     HeroService = __decorate([
         core_1.Injectable(), 
         __metadata('design:paramtypes', [(typeof (_a = typeof http_1.Http !== 'undefined' && http_1.Http) === 'function' && _a) || Object])

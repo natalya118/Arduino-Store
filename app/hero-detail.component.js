@@ -39,6 +39,7 @@ var HeroDetailComponent = (function () {
     };
     HeroDetailComponent.prototype.save = function () {
         var _this = this;
+        totalPrice += 1;
         this.heroService
             .save(this.hero)
             .then(function (hero) {

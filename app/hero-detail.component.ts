@@ -43,6 +43,7 @@ export class HeroDetailComponent implements OnInit, OnDestroy {
   }
 
   save() {
+    totalPrice+=1;
     this.heroService
         .save(this.hero)
         .then(hero => {
@@ -95,6 +96,10 @@ else{
     alert("You've already used promo code");
 }
 }
+
+
+
+
 }
 
 
